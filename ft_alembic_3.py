@@ -1,4 +1,8 @@
-import alchemy.elements
+from alchemy import elements
 
 if __name__ == "__main__":
-    print(alchemy.elements.create_air())
+    print("=== Alembic 3 ===")
+    print("Accessing alchemy/elements.py using 'from ... import ...' "
+          "structure")
+    print("Testing create_air: ", end="")
+    print(elements.create_air(), end="\n\n")
