@@ -1,6 +1,5 @@
 # from .light_validator import validate_ingredients
-import alchemy.grimoire.dark_spellbook
-import alchemy.grimoire.dark_validator
+from .dark_validator import validate_ingredients
 
 
 def dark_spell_allowed_ingredients() -> list[str]:
@@ -9,7 +8,7 @@ def dark_spell_allowed_ingredients() -> list[str]:
 
 def dark_spell_record(spell_name: str, ingredients: str) -> str:
     if ("INVALID" not in
-        alchemy.grimoire.dark_validator.validate_ingredients(ingredients)):
+            validate_ingredients(ingredients)):
         return (f"Spell recorded: {spell_name} ({ingredients} - VALID)")
     else:
         return (f"Spell rejected: {spell_name} ({ingredients} - INVALID)")
