@@ -3,4 +3,4 @@ from .potions import healing_potion as heal, strenght_potion
 from .transmutation import lead_to_gold
 
 
-__all__ = [create_air, strenght_potion, heal, lead_to_gold]
+__all__ = ["create_air", "strenght_potion", "heal", "lead_to_gold"]

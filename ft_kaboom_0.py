@@ -1,7 +1,7 @@
 import alchemy.grimoire.light_spellbook
 
 
-def main():
+def main() -> None:
     print("=== Kaboom 0 ===")
     print("Using grimoire module directly")
     print("Testing record light spell: ", end="")
